@@ -19,8 +19,8 @@
 3. Create Android upload keystore and fill `android/key.properties`.
 4. Configure Apple signing in Xcode with the final bundle ID.
 5. Upload APNs key/certificate in Firebase for iOS push notifications.
-6. Switch Firebase project to `Blaze` if you want real background push on order status changes.
-7. Deploy Cloud Functions from `functions/`.
+6. Stay on `Spark` if realtime sync is enough for now; switch to `Blaze` only if you later need real background push on order status changes.
+7. Deploy Realtime Database rules first; deploy Cloud Functions from `functions/` only after moving to `Blaze`.
 8. Prepare store assets:
    - final app icon
    - screenshots

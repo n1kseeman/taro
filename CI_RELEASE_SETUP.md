@@ -62,10 +62,10 @@ For actual App Store delivery, you still need:
 ## Firebase requirements for production
 
 1. Enable Firebase Realtime Database.
-2. Keep Firebase Cloud Messaging configured.
-3. Upload APNs key for iOS push.
-4. Switch to `Blaze` if you need real background push delivery on order status changes.
-5. Deploy the function from `functions/`.
+2. On `Spark`, deploy only Realtime Database rules and use realtime status updates without background push.
+3. Keep Firebase Cloud Messaging configured only if you plan to move to `Blaze` later.
+4. Upload APNs key for iOS only when you enable real push delivery.
+5. Deploy the function from `functions/` only after upgrading to `Blaze`.
 
 ## Recommended next move
 
