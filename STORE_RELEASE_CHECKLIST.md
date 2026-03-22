@@ -32,6 +32,7 @@
    - `flutter build ios --release --no-codesign`
 10. Put the project in Git and connect CI before store submission.
 11. Review `CI_RELEASE_SETUP.md` and wire GitHub Actions.
+12. Add repository secrets from `GITHUB_SECRETS_SETUP.md` before relying on CI release builds.
 
 ## Recommended package IDs
 

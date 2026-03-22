@@ -35,13 +35,13 @@ The current Gradle setup can still build in CI without a private keystore becaus
 
 For actual Google Play release upload, add the real upload keystore and secrets:
 
-1. Add the keystore file to your CI secret storage or artifact store.
-2. Create `android/key.properties` in CI before the build.
-3. Use the production keystore values:
-   - `storePassword`
-   - `keyPassword`
-   - `keyAlias`
-   - `storeFile`
+1. Add these GitHub repository secrets:
+   - `ANDROID_UPLOAD_KEYSTORE_BASE64`
+   - `ANDROID_KEYSTORE_PASSWORD`
+   - `ANDROID_KEY_PASSWORD`
+   - `ANDROID_KEY_ALIAS`
+2. The workflow already knows how to create `android/key.properties` when these secrets exist.
+3. See `GITHUB_SECRETS_SETUP.md` for the exact format.
 
 ## For iOS store submission
 
@@ -66,6 +66,10 @@ For actual App Store delivery, you still need:
 3. Keep Firebase Cloud Messaging configured only if you plan to move to `Blaze` later.
 4. Upload APNs key for iOS only when you enable real push delivery.
 5. Deploy the function from `functions/` only after upgrading to `Blaze`.
+
+## GitHub secrets
+
+See `GITHUB_SECRETS_SETUP.md`.
 
 ## Recommended next move
 
