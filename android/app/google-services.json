@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "21222061786",
+    "project_id": "taro-tea",
+    "storage_bucket": "taro-tea.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21222061786:android:907b5d37245ad0ddb797e3",
+        "android_client_info": {
+          "package_name": "com.example.taro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW0w-MCYnv_QqVZb8BtHf7p28rACMdhuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:21222061786:android:0a24570345d619a4b797e3",
+        "android_client_info": {
+          "package_name": "com.tarotea.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAW0w-MCYnv_QqVZb8BtHf7p28rACMdhuc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

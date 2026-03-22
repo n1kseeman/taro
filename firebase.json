@@ -1,0 +1,47 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "functions": {
+    "source": "functions"
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "taro-tea",
+          "appId": "1:21222061786:android:0a24570345d619a4b797e3",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "taro-tea",
+          "appId": "1:21222061786:ios:14ee124b876c6d80b797e3",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "macos": {
+        "default": {
+          "projectId": "taro-tea",
+          "appId": "1:21222061786:ios:14ee124b876c6d80b797e3",
+          "uploadDebugSymbols": false,
+          "fileOutput": "macos/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "taro-tea",
+          "configurations": {
+            "android": "1:21222061786:android:0a24570345d619a4b797e3",
+            "ios": "1:21222061786:ios:14ee124b876c6d80b797e3",
+            "macos": "1:21222061786:ios:14ee124b876c6d80b797e3",
+            "web": "1:21222061786:web:63cb043a045a297ab797e3",
+            "windows": "1:21222061786:web:40a6ccefc233d719b797e3"
+          }
+        }
+      }
+    }
+  }
+}
